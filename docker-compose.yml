@@ -3,6 +3,7 @@ version: "3.7"
 volumes:
   state:
 
+
 services:
   creditcoin:
     container_name: creditcoin-validator
@@ -10,7 +11,7 @@ services:
       - state:/creditcoin-node/data
     image: gluwa/creditcoin
     command:
-      - --name
+      - --name himbo.v1
       - validator
       - --validator
       - --chain
